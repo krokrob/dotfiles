@@ -65,4 +65,20 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/usr/local/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/usr/local/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+#         . "/usr/local/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/usr/local/Caskroom/miniforge/base/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
+
+# conda activate lewagon && PROMPT=$(echo $PROMPT | sed "s/($CONDA_DEFAULT_ENV) //") && RPROMPT+="[🐍 $CONDA_DEFAULT_ENV]"
