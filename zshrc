@@ -82,3 +82,4 @@ export BUNDLER_EDITOR=code
 # <<< conda initialize <<<
 
 # conda activate lewagon && PROMPT=$(echo $PROMPT | sed "s/($CONDA_DEFAULT_ENV) //") && RPROMPT+="[🐍 $CONDA_DEFAULT_ENV]"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
