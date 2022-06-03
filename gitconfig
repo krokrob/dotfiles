@@ -48,7 +48,7 @@
   mergeoptions = --no-edit
 [user]
 	email = kevin.j.robert@gmail.com
-	name = kevin robert
+	name = Kevin Robert
 [pull]
 	ff = only
 [filter "lfs"]
