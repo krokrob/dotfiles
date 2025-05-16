@@ -15,6 +15,7 @@ ZSH_DISABLE_COMPFIX=true
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
+unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
 
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
@@ -65,6 +66,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
+export EDITOR=code
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -82,5 +84,7 @@ export BUNDLER_EDITOR=code
 # <<< conda initialize <<<
 
 # conda activate lewagon && PROMPT=$(echo $PROMPT | sed "s/($CONDA_DEFAULT_ENV) //") && RPROMPT+="[🐍 $CONDA_DEFAULT_ENV]"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+
+
+# Set ipdb as the default Python debugger
+export PYTHONBREAKPOINT=ipdb.set_trace
